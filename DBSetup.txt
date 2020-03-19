@@ -1,0 +1,14 @@
+CREATE DATABASE misc 2;
+
+USE misc;
+
+
+CREATE TABLE Favorites (
+  user_id INTEGER NOT NULL AUTO_INCREMENT,
+  name VARCHAR(128),
+  food VARCHAR(128),
+  vote INT,
+ 
+  PRIMARY KEY(user_id)
+ 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
